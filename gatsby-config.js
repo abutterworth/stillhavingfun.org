@@ -6,5 +6,21 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-theme-ui',
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Nunito Sans`,
+            subsets: [`latin`],
+            variants: [`300`, `400`, `700`]
+          },
+        ],
+      },
+    },
+  ],
 }
