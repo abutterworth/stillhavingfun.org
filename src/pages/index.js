@@ -3,6 +3,8 @@ import { Grid,AspectRatio,  Box , Divider, Heading, Text, Button, AspectImage } 
 import NavLink from '../components/NavLink';
 import Link from '../components/Link';
 import { thumbnail as wavyThingsThumbnail } from './sketches/wavy-things';
+import { thumbnail as fishThumbnail } from './sketches/fish';
+
 export default function Home() {
   return (
     <>
@@ -24,6 +26,13 @@ export default function Home() {
             src={wavyThingsThumbnail}
             ratio={16/9}
             alt="wavy things"
+          />
+        </Link>
+        <Link to="/sketches/fish">
+          <AspectImage
+            src={fishThumbnail}
+            ratio={16/9}
+            alt="fish"
           />
         </Link>
 
